@@ -1,0 +1,12 @@
+server:
+  port: 8085
+minio:
+  endpoint: http://192.168.136.160:9000
+  accessKey: ROOTNAME
+  secretKey: CHANGEME123
+  bucketName: xiaodongtest
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10000MB
+      max-request-size: 10000MB
