@@ -7,6 +7,7 @@ import io.minio.PutObjectArgs;
 import io.minio.errors.*;
 import org.apache.http.entity.ContentType;
 
+import org.simpleframework.xml.Transient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +18,7 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.UUID;
 
+@Transient
 @RestController
 @RequestMapping("minio")
 public class MinioController {
